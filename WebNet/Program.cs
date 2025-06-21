@@ -16,6 +16,9 @@ namespace WebNet
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
 
+            builder.Services.AddHttpClient<PostService>();
+
+
             var app = builder.Build();
 
             //Database

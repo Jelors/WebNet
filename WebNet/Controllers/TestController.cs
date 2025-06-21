@@ -7,34 +7,22 @@ namespace WebNet.Controllers
     [ApiController]
     public class TestController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult<User> Get()
-        {
-            var user = new User();
-            user.Id = 37;
-            user.Age = 21;
-            user.Email = "wwwwww@gmail.com";
-            user.Name = "John";
-            user.Login = "TestLogin";
-            user.Password = "password";
+       
 
-            return user;
-        }
-
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return $"GET with id - {id}";
-        }
-        [HttpPost("{input}")]
-        public string Post(string input)
-        {
-            return input;
-        }
-        [HttpDelete("{id}")]
-        public string Delete(int id)
-        {
-            return $"This is DELETE with id - {id}";
-        }
+        //[HttpGet("{id}")]
+        //public IActionResult Get(int id)
+        //{
+        //    return Ok(new { message = $"GET with id - {id}" });
+        //}
+        //[HttpPost("{input}")]
+        //public IActionResult Post(string input)
+        //{
+        //    return Ok(new { message = input });
+        //}
+        //[HttpDelete("{id}")]
+        //public IActionResult Delete(int id)
+        //{
+        //    return Ok(new { message = $"Thing with id: {id} was deleted" });
+        //}
     }
 }
